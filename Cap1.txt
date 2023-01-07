@@ -1,0 +1,127 @@
+Introdução a aplicativos Java – 2
+entrada/saída e operadores
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+public classe Welcome {
+	public static void main (String[] args) {
+		System.out.println("Hello World");
+	}
+}
+
+System.out.print - Não pula linha
+System.out.println - Pula linha
+
+Ou
+
+System.out.println("Welcome\nHello\n")
+\n - Tecla de escape para pular uma linha
+
+Compila
+javac Welcome.java
+
+Executa depois de compilar
+java Welcome
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+public class Welcome1{
+	public static void main (String[] args) {
+		System.out.println("Ola\nTudo Bem\nCom voce?");
+	}
+}
+
+
+\n - Nova linha. Posiciona o cursor de tela no início da próxima linha.
+
+\t - Tabulação horizontal. Move o cursor de tela para a próxima parada de tabulação.
+
+\r - Retorno de carro. Posiciona o cursor da tela no início da linha atual — não avança para a
+próxima linha. Qualquer saída de caracteres depois do retorno de carro sobrescreve a saída de
+caracteres anteriormente gerada na linha atual.
+
+\\ - Barras invertidas. Utilizadas para imprimir um caractere de barra invertida.
+
+\" Aspas duplas. Utilizadas para imprimir um caractere de aspas duplas. Por exemplo, System.out.println("\"entre aspas\""); 
+exibe "entre aspas".
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+public class Format{
+	public static void main(String[] args) {
+		System.out.printf("%s%n")
+	}
+}
+
+%s é um marcador de lugar para uma string.
+%n, que é uma linha separadora.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+
+public class Addition{
+
+	public static void main(String[] args) {
+
+		// cria um Scanner para obter entrada a partir da janela de comando
+		Scanner input = new Scanner(System.in);
+
+		int num1;
+		int num2;
+		int sum;
+
+		System.out.println("Digite o primeiro numero");
+		num1 = input.nextInt();
+
+		System.out.println("Digite o segundo numero");
+		num2 = input.nextInt();
+
+		System.out.println("A soma desses dois numeros é");
+		sum = num1 + num2;
+		
+		System.out.printf("Sum is %d%n", sum)
+	
+	}
+}
+
+Operadores:
+	Adição +
+	Subtração –
+	Multiplicação *
+	Divisão /
+	Resto %
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
