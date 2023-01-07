@@ -1,5 +1,4 @@
-Introdução a aplicativos Java – 2
-entrada/saída e operadores
+Introdução a aplicativos Java entrada/saída e operadores
 
 --------------------------------------------------------------------------------------------------------------------------------------
 

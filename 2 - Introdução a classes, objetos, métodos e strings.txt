@@ -1,0 +1,104 @@
+Introdução a classes, objetos, métodos e strings
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+public class Conta{
+	private String nome;
+	
+	//Metodo que define o nome do objeto
+	public void setNome(String nome){
+		this.nome = nome; -- Armazena o nome
+	}
+
+	//Metodo que recupera o objeto
+	public String getNome() {
+		return nome;
+	}
+}
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+
+public class ContaTeste {
+	public void static main (String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		//Cria um objeto Account e o atribui a minhaConta
+		Conta minhaConta = new Conta();
+		
+		//Exibe o valor inicial do nome
+		System.out.printf("Nome inicial: %s%n", minhaConta.getNome());
+		
+		//Solicita e le o nome
+
+		System.out.println("Digite seu nome:");
+		String nomeUser = input.nextLine(); // Lê uma linha de texto
+		minhaConta.setNome(nomeUser); // Insere o nomeUser em minhaConta
+
+		System.out.printf("Nome da conta é %s%n" minhaConta.getNome()); 
+		
+	}
+}
+
+
+
+Compilar as duas classes
+
+javac Conta.java ContaTeste.java
+
+para compilar ambas as classes de uma vez. Se o diretório que contém o aplicativo incluir apenas os arquivos desse aplicativo, você
+pode compilar ambas as classes com o comando
+javac *.java
+
+java ContaTeste  //Roda o Conta teste
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
