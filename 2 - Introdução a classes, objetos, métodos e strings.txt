@@ -57,6 +57,124 @@ java ContaTeste  //Roda o Conta teste
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
+public class Conta {
+	public static void main(String[] args) {
+		Conta conta1 = new Conta("Gustavo");
+		Conta conta2 = new Conta("Ferreira");
+		System.out.printf(conta2.getNome());
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+public class Conta{
+	private String nome;
+	private double balanca;
+	
+	//Construtor da classe Conta
+	public Conta(String nome, double balanca) {
+		this.nome = nome
+		if(balanca > 0.0) {
+			this.balanca = balanca;
+		}
+	}
+
+	//Metodo que deposita o dinheiro caso o valor seja positivo
+	public void deposita(double depositaValor) {
+		if(depositaValor > 0.0) {	//Se depositaValor for maior que 0.0 adiciona ao saldo da Conta
+			balanca = balanca + depositaValor; // add ao saldo da Conta
+		}
+	}
+
+	//metodo que retorna o saldo
+	public double getBalanca() {
+		return balanca;
+	}	
+
+	//metodo que define o nome
+	public void setNome(String nome) {
+		this.nome = nome; //Adiciona o nome
+	}
+
+	//metodo que retorna o nome
+	public String getNome() {
+		return nome; //Retorna o nome
+	}
+}
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+// Classe teste para executar a classe conta
+
+public class ContaTeste{
+	public static void main(String[] args) {
+		Conta conta1 = new Conta("Gustavo", 78.0);
+		Conta conta2 = new Conta("Ferreira", -65.0);
+	
+		System.out.printf("%s Seu saldo é: $%.2f", conta1.getNome(), conta1.getBalance());
+		System.out.printf("%s Seu saldo é: $%.2f", conta2.getNome(), conta2.getBalance());
+
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("Deposite um valor: ");
+		double depositar = input.nextDouble();
+		
+		System.out.printf("%nVoce adicionou %2.f ao seu Saldo", depositar);
+		conta1.deposita(depositar); //Adiciona o valor a conta
+
+		Syste.out.printf("%n%s Seu saldo é: %2.f", conta1.getNome(), conta1.getBalance());
+ 
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Estudo de caso de GUIs e imagens gráficas: utilizando caixas
+de diálogo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
