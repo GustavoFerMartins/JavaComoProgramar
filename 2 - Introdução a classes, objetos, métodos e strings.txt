@@ -130,8 +130,7 @@ public class ContaTeste{
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
-Estudo de caso de GUIs e imagens gráficas: utilizando caixas
-de diálogo
+
 
 
 
